@@ -1,7 +1,7 @@
 import { openai } from "../utils/openaiClient.js";
 
 export async function processText(text) {
-  const prompt = \`Process the following input and reply in simple language:\n\n\${text}\`;
+  const prompt = `Process the following input and reply in simple language:\n\n${text}`;
   const response = await openai.chat.completions.create({
     model: "gpt-4o",
     messages: [{ role: "user", content: prompt }],
