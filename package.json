@@ -1,0 +1,11 @@
+{
+  "name": "text-pipeline",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "openai": "^4.21.1"
+  }
+}
